@@ -1,0 +1,81 @@
+<div id="cover">
+    <div id="top-ctr">
+        <div class="btn" id="btn-r">@</div>
+        <div id="light" class="btn"><div id="light-inner"></div></div>
+        <div class="btn">-</div> 
+    </div>
+    <div id="btn-grid">
+        <div class="btn">1</div>
+        <div class="btn">2</div>
+        <div class="btn">3</div>
+        <div class="btn">4</div>
+        <div class="btn">5</div>
+        <div class="btn">6</div>
+        <div class="btn">7</div>
+        <div class="btn">8</div>
+        <div class="btn">9</div>
+        <div class="btn">*</div>
+        <div class="btn">0</div>
+        <div class="btn">#</div>
+    </div>
+    <div id="btn-bg"><div class="btn">+</div></div>
+</div>
+<style>*{
+    box-sizing: border-box;
+}body, .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}#cover{
+    position: relative;
+    background: black;
+    width: 300px;
+    height:650px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #403f3f;
+    padding: 20px;
+}#top-ctr{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}#btn-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    gap:30px
+}.btn{
+    background: grey;
+    color:white;
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: small;
+    font-weight: bold;
+}#btn-r{
+    background: red;
+}#btn-bg{
+    height: 90px; 
+    width: 125px;
+    margin: 100px auto;
+    background: #403f3f;
+    border-radius: 50%;
+}#btn-bg .btn{
+    width: 90px;
+    height: 90px;
+    font-size: 50px;
+    margin: auto;
+}#light{
+    position: relative;
+    height: 20px;
+    margin-top: -20px;
+    border-radius: 0 0 20px 20px;
+}#light-inner{
+    background: red;
+    width: 20px;
+    height: 10px;
+    border-radius: 20px 20px 5px 5px;
+    position: absolute;
+    bottom: 1px;
+    box-shadow: 0 0 20px 3px red;
+}  
+</style> 
